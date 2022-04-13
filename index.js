@@ -1,13 +1,4 @@
 let quiz={
-    question1 :{
-        "Q":"Quelles méthodes et variables peuvent être utilisées dans une classe héritée ?",
-        "answers":{
-            "a1":["private ou protected",0],
-            "a2":["public ou protected",1],
-            "a3":["toutes",0],
-            "a4":["private ou public",0]
-        }
-    },
     question2 :{
         "Q":"Que retourne le constructeur ?",
         "answers":{
@@ -65,43 +56,109 @@ let quiz={
 
 
 }
+
+// PAGE INDEX.HTML
+
 // card body
 let cardBody=document.getElementById('card-body');
 // inputs
-let input1=document.getElementById('input1');
-let input2=document.getElementById('input2');
-let input3=document.getElementById('input3');
-let input4=document.getElementById('input4');
+let input1=document.getElementById('answer1');
+let input2=document.getElementById('answer2');
+let input3=document.getElementById('answer3');
+let input4=document.getElementById('answer4');
 // labels
 let label1=document.getElementById('label1');
 let label2=document.getElementById('label2');
 let label3=document.getElementById('label3');
 let label4=document.getElementById('label4');
+// span
+let span=document.getElementById('span');
+let scorSpan=document.getElementById('score-span');
 // button
-let button=document.getElementById('valid');
+let valider=document.getElementById('valider');
+let nextone=document.getElementById('nextone');
 // header
 let header=document.getElementById('card-header');
 // Object Size
 let size = Object.keys(quiz).length;
-console.log(size);
 let counter=1;
-
-button.addEventListener('click',event=>{
-    if ( event.target && size >=counter ) {
-        header.textContent=quiz[`question${counter}`]['Q'];
-        label1.textContent=quiz[`question${counter}`]["answers"]["a1"][0];
-        label2.textContent=quiz[`question${counter}`]["answers"]["a2"][0];
-        label3.textContent=quiz[`question${counter}`]["answers"]["a3"][0];
-        label4.textContent=quiz[`question${counter}`]["answers"]["a4"][0];
+ // initial quiz
+let initQuiz={
+    question1 :{
+        "Q":"Quelles méthodes et variables peuvent être utilisées dans une classe héritée ?",
+        "answers":{
+            "a1":["private ou protected",0],
+            "a2":["public ou protected",1],
+            "a3":["toutes",0],
+            "a4":["private ou public",0]
+        }
+    },
+}
+// labels
+header.textContent=initQuiz[`question${counter}`]['Q'];
+label1.textContent=initQuiz[`question${counter}`]["answers"]["a1"][0];
+label2.textContent=initQuiz[`question${counter}`]["answers"]["a2"][0];
+label3.textContent=initQuiz[`question${counter}`]["answers"]["a3"][0];
+label4.textContent=initQuiz[`question${counter}`]["answers"]["a4"][0];    
+// values
+input1.value=initQuiz[`question${counter}`]["answers"]["a1"][1];
+input2.value=initQuiz[`question${counter}`]["answers"]["a2"][1];
+input3.value=initQuiz[`question${counter}`]["answers"]["a3"][1];
+input4.value=initQuiz[`question${counter}`]["answers"]["a4"][1];
+// add event listener
+let score=0;
+function next() {
         counter++;
+        span.textContent=counter;
+        if (counter<= size+1) {
+            // labels
+            header.textContent=quiz[`question${counter}`]['Q'];
+            label1.textContent=quiz[`question${counter}`]["answers"]["a1"][0];
+            label2.textContent=quiz[`question${counter}`]["answers"]["a2"][0];
+            label3.textContent=quiz[`question${counter}`]["answers"]["a3"][0];
+            label4.textContent=quiz[`question${counter}`]["answers"]["a4"][0];    
+            // values
+            input1.setAttribute('value',`${quiz[`question${counter}`]["answers"]["a1"][1]}`);
+            input2.setAttribute('value',`${quiz[`question${counter}`]["answers"]["a2"][1]}`);
+            input3.setAttribute('value',`${quiz[`question${counter}`]["answers"]["a3"][1]}`);
+            input4.setAttribute('value',`${quiz[`question${counter}`]["answers"]["a4"][1]}`); 
+        }
+        if (counter===size+1){
+            valider.remove();
+            nextone.remove();
+            // link
+            let link=document.createElement("a");
+            link.setAttribute("href",'result.html');
+            let resultBtn=document.createElement("button");
+            resultBtn.setAttribute('id','result');
+            resultBtn.setAttribute("class","float-end btn btn-success");
+            resultBtn.setAttribute("type","button");
+            resultBtn.textContent="Result";
+            // append child
+            link.appendChild(resultBtn)
+            cardBody.appendChild(link);
+            // show results 
+            let result_final=document.getElementById('result');
+            result_final.addEventListener('click',event=>{
+                if (event.target) {
+                    valid();
+                    scorSpan.textContent=score;
+
+                }
+            });
+        }
+        
+}
+function valid() {
+    for (const form of document.forms) {
+        for (const ele of form.elements) {
+            if (ele.checked) {
+                score+=parseInt(ele.value)
+                // span.textContent=score;
+            }
+        }
     }
-    if (counter===size){
-        button.remove();
-        let result=document.createElement("button");
-        result.setAttribute('id','result');
-        result.setAttribute("class","float-end btn btn-success");
-        result.setAttribute("type","button");
-        result.textContent="Result";
-        cardBody.appendChild(result);
-    }
-});
+}
+export {quiz , score};
+
+
