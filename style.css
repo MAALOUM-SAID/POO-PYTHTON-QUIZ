@@ -1,0 +1,20 @@
+body{
+    background-image: url('index.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-container{
+    background-color: #ece6e6;
+}
+.card-ctx{
+    background-color: #ece6e6;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2 span{
+    font-weight: 700;
+    
+}
+nav{
+    background-color: #ece6e6;
+}

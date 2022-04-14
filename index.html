@@ -5,12 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body> 
-    <div class="container m-auto mt-5">
-        <div class="card p-5 ">
-          <div class="card-header bg-white">   
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+          <h2 class="font-monospace">PYTHON QUIZ <span class="text-warning">OOP</span> </h2>
+          <a href="index.html" class="btn btn-outline-success m-lg-3">Home</a>
+        </div>
+      </nav>
+    <div class="container m-auto mt-5 shadow-lg" id="disp-div">
+        <div class="card p-4 card-container">
+          <div class="card-header card-container">   
             <h1 class="float-end " >
               <span id="span">1</span> / <span>10</span>
             </h1>
@@ -46,7 +53,7 @@
                       Default radio
                     </label>
                   </div>
-                  <button type="button"  id="nextone"   class="float-end m-2 btn btn-success">next</button>
+                  <button type="button"  id="nextone"   class="float-end m-2 btn btn-primary">next</button>
                   <button  type="button" id="valider" class="float-end m-2 btn btn-warning">valid</button>
                 </form>
               </div>
@@ -55,11 +62,12 @@
           
         </div>
     </div><hr class="m-4">
-    <div  id="score" class="card m-5 " style="">
+    <div  id="score" class="card m-5 card-container" style="visibility: hidden;">
       <div class="card-header">Result</div>
       <div class="card-body text-dark font-monospace">
         <h5 class="card-title">Score : <span id="card-span"></span></h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <button  type="button" id="show" class="float-end m-2 btn btn-outline-secondary">Show answers</button>
       </div>
     </div>
     <script src="index.js"></script>
