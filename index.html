@@ -8,8 +8,8 @@
     <title>Document</title>
 </head>
 <body> 
-    <div class="container">
-        <div class="card">
+    <div class="container m-auto mt-5">
+        <div class="card p-5 ">
           <div class="card-header bg-white">   
             <h1 class="float-end " >
               <span id="span">1</span> / <span>10</span>
@@ -46,16 +46,23 @@
                       Default radio
                     </label>
                   </div>
-                  <button onclick="next()" id="nextone" type="button" class="float-end m-2 btn btn-success">next</button>
-                  <button onclick="valid()" id="valider" type="button" class="float-end m-2 btn btn-warning">valid</button>
+                  <button type="button"  id="nextone"   class="float-end m-2 btn btn-success">next</button>
+                  <button  type="button" id="valider" class="float-end m-2 btn btn-warning">valid</button>
                 </form>
               </div>
 
           </div>
           
         </div>
+    </div><hr class="m-4">
+    <div  id="score" class="card m-5 " style="">
+      <div class="card-header">Result</div>
+      <div class="card-body text-dark font-monospace">
+        <h5 class="card-title">Score : <span id="card-span"></span></h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
     </div>
-    <script type="module" src="index.js"></script>
+    <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
