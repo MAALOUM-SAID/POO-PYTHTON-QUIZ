@@ -27,6 +27,9 @@ fetch('./qcm.json')
             // Object Size
             let size = Object.keys(data).length;
             let counter = 1;
+            // max score
+            let maxScore=document.getElementById('max-score').textContent=size+1;
+            let validClicked=0;
             // initial quiz
             let initQuiz = {
                 question1: {
@@ -58,6 +61,7 @@ fetch('./qcm.json')
             nextone.addEventListener('click', event => {
                 if (event.target) {
                     counter++;
+                    validClicked=0;
                     span.textContent = counter;
                     if (counter <= size + 1) {
                         // labels
@@ -108,7 +112,7 @@ fetch('./qcm.json')
                                             let show = document.getElementById('show');
                                             show.addEventListener('click', e => {
                                                 if (e.target) {
-
+                                                    document.body.style.overflow="scroll";
                                                 }
                                                 let div = document.createElement('div');
                                                 div.setAttribute('class', 'card');
@@ -143,7 +147,7 @@ fetch('./qcm.json')
                                         }
                                     }
                                 }
-                                result.style.visibility = 'inherit';
+                                result.style.display = 'flex';
 
                             }
                         });
@@ -157,8 +161,9 @@ fetch('./qcm.json')
                 if (event.target) {
                     for (const form of document.forms) {
                         for (const ele of form.elements) {
-                            if (ele.checked) {
-                                score += parseInt(ele.value)
+                            if (ele.checked && validClicked!=1) {
+                                score += parseInt(ele.value);
+                                validClicked=1;
                             }
                         }
                     }

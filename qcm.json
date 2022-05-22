@@ -60,5 +60,145 @@
             "a4":["implémentation",0]
         },
         "discription":"instanciation"
+    },
+    "question8" :{
+        "Q":"En PYTHON, comment instancier un objet à partir d'une classe ?",
+        "answers":{
+            "a1":["obj=new NomClass()",0],
+            "a2":["obj=self NomClass()",0],
+            "a3":["obj=NomClass()",1],
+            "a4":["obj=object.NomClass()",0]
+        },
+        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+    },
+    "question9" :{
+        "Q":"L'encapsulation est utile pour ?",
+        "answers":{
+            "a1":["étiqueter des objets",0],
+            "a2":["protéger l'intégrité des objets",1],
+            "a3":["accélérer les traitements",0],
+            "a4":["économiser la mémoire",0]
+        },
+        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+    },
+    "question10" :{
+        "Q":"Soit a=Maclass() une instance de classe, print(a) recherchera quelle méthode ??",
+        "answers":{
+            "a1":["__call__()",0],
+            "a2":["__repr__()",0],
+            "a3":["__init__()",0],
+            "a4":["__str__()",1]
+        },
+        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+    },
+    "question11" :{
+        "Q":"Comment appelle-t-on une méthode dont le nom est entouré de double underscores ?",
+        "answers":{
+            "a1":["une méthode d'instance",0],
+            "a2":["dunder ou méthode magique",1],
+            "a3":["une méthode abstraite",0],
+            "a4":["une méthode de classe",0]
+        },
+        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+    },
+    "question12" :{
+        "Q":"L'héritage multiple pour une classe en Python est?",
+        "answers":{
+            "a1":["possible",1],
+            "a2":["interdit",0],
+            "a3":["possible uniquement avec les interfaces",0],
+            "a4":["interdit depuis la version 2.0",0]
+        },
+        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+    },
+    "question13" :{
+        "Q":"Que signifie, par convention, un seul underscore '_' qui préfixe le membre d'une classe ?",
+        "answers":{
+            "a1":["final",0],
+            "a2":["protégée",1],
+            "a3":["privée",0],
+            "a4":["Public",0]
+        },
+        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+    },
+    "question14" :{
+        "Q":"Que signifie, par convention, une double underscore '__' qui préfixe le membre d'une classe ?",
+        "answers":{
+            "a1":["final",0],
+            "a2":["protégée",0],
+            "a3":["privée",1],
+            "a4":["Public",0]
+        },
+        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+    },
+    "question15" :{
+        "Q":"Par rapport à un objet, on dit que sa classe est?",
+        "answers":{
+            "a1":["son instance",0],
+            "a2":["son instanciation",0],
+            "a3":["son accesseur",0],
+            "a4":["son type",1]
+        },
+        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+    },
+    "question16" :{
+        "Q":"Lorsqu'une propriété, d'un attribut ou méthode n'est accessible qu'aux instances de la classe et de ses sous-classes, elle est?",
+        "answers":{
+            "a1":["abstraite",0],
+            "a2":["protégée",1],
+            "a3":["privée",0],
+            "a4":["spécialisée",0]
+        },
+        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+    },
+    "question17" :{
+        "Q":"Le mot clé \"super\" permet ?",
+        "answers":{
+            "a1":["de définir une classe comme prioritaire",0],
+            "a2":["de définir une méthode prioritaire",0],
+            "a3":["d'accéder aux membres d'une classe mère",1],
+            "a4":["d'étendre la portée d'une classe",0]
+        },
+        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+    },
+    "question18" :{
+        "Q":"Est-il possible de créer un objet à partir d'une classe abstraite ?",
+        "answers":{
+            "a1":["non",1],
+            "a2":["oui",0],
+            "a3":["oui,si la classe abstraite ne contient pas une methode abstraite",0],
+            "a4":["oui, a partir de version 3.0 est possible",0]
+        },
+        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+    },
+    "question19" :{
+        "Q":"Une classe peut instancier ?",
+        "answers":{
+            "a1":["des variables",0],
+            "a2":["des méthodes",0],
+            "a3":["des attributs",0],
+            "a4":["des objets",1]
+        },
+        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+    },
+    "question20" :{
+        "Q":"Le terme \"polymorphisme\" s'emploie plus particulièrement pour?",
+        "answers":{
+            "a1":["une classe fille",0],
+            "a2":["une méthode",1],
+            "a3":["une classe",0],
+            "a4":["une super classe",0]
+        },
+        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+    },
+    "question21" :{
+        "Q":"Quel module permet d'utiliser les expressions régulières ?",
+        "answers":{
+            "a1":["re",1],
+            "a2":["regex",0],
+            "a3":["regular expressions",0],
+            "a4":["regexp",0]
+        },
+        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
     }
 }
