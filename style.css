@@ -1,7 +1,5 @@
 body{
-    background:url("index.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background:linear-gradient(-95deg,white,rgb(168, 2, 168));
     overflow: hidden;
     scroll-behavior: smooth;
 }
@@ -22,9 +20,6 @@ body{
 h2 span{
     font-weight: 700;
     
-}
-nav{
-    background-color: #ece6e6;
 }
 .alert{
     position: absolute;
