@@ -7,7 +7,8 @@
             "a3":["un pointeur",0],
             "a4":["rien",1]
         },
-        "discription":"Le constracteur retourne rien"
+        "discription":"Un constructeur permet d'initialiser les données des objets (les attributs) de la classe dont elle dépend Le constructeur ne doit pas avoir un type de retour.",
+        "answer":"rien"
     
     },
     "question3" :{
@@ -18,7 +19,8 @@
             "a3":["oui, toutes",0],
             "a4":["oui si elle est 'public'",0]
         },
-        "discription":"non, l'interface ne pas instancier"
+        "discription":"Une interface est une forme particulière de classe où toutes les méthodes sont abstraites .",
+        "answer":"non"
     },
     "question4" :{
         "Q":"Une variable de classe, commune à toutes les instances d'une classe doit être déclarée ?",
@@ -28,17 +30,19 @@
             "a3":["private",0],
             "a4":["global",0]
         },
-        "discription":"satic , variable de class "
+        "discription":"Un attribut dont la valeur est la même pour toutes les instances d’une classe est appelé un attribut de classe. Par conséquent, la valeur de l’attribut de classe est partagée par tous les objets. ",
+        "answer":"static"
     },
     "question5" :{
-        "Q":"Comment permettre à une méthode de gérer un nombre de paramètres variable en python ?",
+        "Q":"Comment permettre à une constructeur de gérer un nombre de paramètres variable en python ?",
         "answers":{
             "a1":["définir différents accesseurs",0],
             "a2":["utiliser des paramettres optionels",1],
             "a3":["la surcharger",0],
             "a4":["la déclarer en void",0]
         },
-        "discription":"utiliser des paramettres optionels"
+        "discription":"Pour permettre à une constructeur de gérer un nombre de paramètres variable en python il peux mettre des valeurs par defaut. ",
+        "answer":"utiliser des paramettres optionels"
     },
     "question6" :{
         "Q":"Dans quels langages une classe peut profiter de l'héritage multiple (hériter de plusieurs classes en même temps) ?",
@@ -48,7 +52,8 @@
             "a3":["Python",1],
             "a4":["PHP",0]
         },
-        "discription":"Python"
+        "discription":"L'héritage multiple se produit lorsque la classe enfant hérite des méthodes et des fonctionnalités de deux ou plusieurs classes parentes.",
+        "answer":"Python"
 
     },
     "question7" :{
@@ -59,7 +64,8 @@
             "a3":["surcharge",0],
             "a4":["implémentation",0]
         },
-        "discription":"instanciation"
+        "discription":"L’instanciation explicite d’un objet se fait via un constructeur. Il est appelé automatiquement lors de la création de l’objet dans la mémoire.",
+        "answer":"instanciation"
     },
     "question8" :{
         "Q":"En PYTHON, comment instancier un objet à partir d'une classe ?",
@@ -69,7 +75,8 @@
             "a3":["obj=NomClass()",1],
             "a4":["obj=object.NomClass()",0]
         },
-        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()",
+        "answer":"obj=NomClass()"
     },
     "question9" :{
         "Q":"L'encapsulation est utile pour ?",
@@ -79,17 +86,19 @@
             "a3":["accélérer les traitements",0],
             "a4":["économiser la mémoire",0]
         },
-        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+        "discription":"L’encapsulation est le fait de réunir à l'intérieur d'une même entité (objet) le code (méthodes) + données (attributs) L’encapsulation consiste à protéger l’information contenue dans un objet",
+        "answer":"protéger l'intégrité des objets"
     },
     "question10" :{
-        "Q":"Soit a=Maclass() une instance de classe, print(a) recherchera quelle méthode ??",
+        "Q":"Soit a=Maclass() une instance de classe, print(a) recherchera quelle méthode ?",
         "answers":{
             "a1":["__call__()",0],
             "a2":["__repr__()",0],
             "a3":["__init__()",0],
             "a4":["__str__()",1]
         },
-        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+        "discription":"__str__ : vous donne la possibilité de redéfinir l’affichage d’un objet",
+        "answer":"__str__()"
     },
     "question11" :{
         "Q":"Comment appelle-t-on une méthode dont le nom est entouré de double underscores ?",
@@ -99,7 +108,8 @@
             "a3":["une méthode abstraite",0],
             "a4":["une méthode de classe",0]
         },
-        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+        "discription":"Les méthodes Dunder ou magic en Python sont les méthodes ayant deux traits de soulignement préfixe et suffixe dans le nom de la méthode. Dunder signifie ici «Double Under (Underscores)». Ceux-ci sont couramment utilisés pour la surcharge des opérateurs.",
+        "answer":"dunder ou méthode magique"
     },
     "question12" :{
         "Q":"L'héritage multiple pour une classe en Python est?",
@@ -109,7 +119,8 @@
             "a3":["possible uniquement avec les interfaces",0],
             "a4":["interdit depuis la version 2.0",0]
         },
-        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+        "discription":"L'héritage multiple se produit lorsque la classe enfant hérite des méthodes et des fonctionnalités de deux ou plusieurs classes parentes.",
+        "answer":"possible"
     },
     "question13" :{
         "Q":"Que signifie, par convention, un seul underscore '_' qui préfixe le membre d'une classe ?",
@@ -119,7 +130,8 @@
             "a3":["privée",0],
             "a4":["Public",0]
         },
-        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+        "discription":"On préfixera les noms des membres qu'on souhaite définir comme “protégés” avec un underscore comme ceci : _nom-du-membre .",
+        "answer":"protégée"
     },
     "question14" :{
         "Q":"Que signifie, par convention, une double underscore '__' qui préfixe le membre d'une classe ?",
@@ -129,7 +141,8 @@
             "a3":["privée",1],
             "a4":["Public",0]
         },
-        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+        "discription":"On préfixera les noms des membres qu'on souhaite définir comme “privés” avec deux underscores comme ceci : __nom-du-membre",
+        "answer":"privée"
     },
     "question15" :{
         "Q":"Par rapport à un objet, on dit que sa classe est?",
@@ -139,7 +152,8 @@
             "a3":["son accesseur",0],
             "a4":["son type",1]
         },
-        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+        "discription":"En python, les classes sont des types modifiables. Le corps d'une classe peut être vide, inclure des variables ou attributs, des fonctions ou méthodes. Il est en tout cas indenté de façon à indiquer à l'interpréteur python les lignes qui forment le corps de la classe.",
+        "answer":"son type"
     },
     "question16" :{
         "Q":"Lorsqu'une propriété, d'un attribut ou méthode n'est accessible qu'aux instances de la classe et de ses sous-classes, elle est?",
@@ -149,7 +163,8 @@
             "a3":["privée",0],
             "a4":["spécialisée",0]
         },
-        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+        "discription":"Les variables protégées sont les membres de données d'une classe auxquels il est possible d'accéder dans la classe et les classes dérivées de cette classe.",
+        "answer":"protégée"
     },
     "question17" :{
         "Q":"Le mot clé \"super\" permet ?",
@@ -159,7 +174,8 @@
             "a3":["d'accéder aux membres d'une classe mère",1],
             "a4":["d'étendre la portée d'une classe",0]
         },
-        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+        "discription":"super() est un outil puissant permettant d'accéder aux parents directs lors d'héritage et de régler différents problèmes dus à l'héritage multiple.",
+        "answer":"d'accéder aux membres d'une classe mère"
     },
     "question18" :{
         "Q":"Est-il possible de créer un objet à partir d'une classe abstraite ?",
@@ -169,7 +185,8 @@
             "a3":["oui,si la classe abstraite ne contient pas une methode abstraite",0],
             "a4":["oui, a partir de version 3.0 est possible",0]
         },
-        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+        "discription":"Les classes abstraites sont des classes qui ne peuvent pas être instanciées, elles contiennent une ou plusieurs méthodes abstraites (méthodes sans code)",
+        "answer":"non"
     },
     "question19" :{
         "Q":"Une classe peut instancier ?",
@@ -179,7 +196,8 @@
             "a3":["des attributs",0],
             "a4":["des objets",1]
         },
-        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+        "discription":"Une classe regroupe des fonctions et des attributs qui définissent un objet. On appelle par ailleurs les fonctions d'une classe des \" méthodes\". ",
+        "answer":"des objets"
     },
     "question20" :{
         "Q":"Le terme \"polymorphisme\" s'emploie plus particulièrement pour?",
@@ -189,6 +207,7 @@
             "a3":["une classe",0],
             "a4":["une super classe",0]
         },
-        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
+        "discription":"le polymorphisme est un concept qui fait référence à la capacité d'une variable, d'une fonction ou d'un objet à prendre plusieurs formes, c'est-à-dire à sa capacité de posséder plusieurs définitions différentes.",
+        "answer":"une méthode"
     }
 }
