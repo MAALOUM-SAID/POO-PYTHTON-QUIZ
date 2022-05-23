@@ -28,7 +28,7 @@ fetch('./qcm.json')
             let size = Object.keys(data).length;
             let counter = 1;
             // max score
-            let maxScore=document.getElementById('max-score').textContent=size+1;
+            document.getElementById('max-score').textContent=size+1;
             let validClicked=0;
             // initial quiz
             let initQuiz = {
@@ -63,6 +63,8 @@ fetch('./qcm.json')
                     counter++;
                     validClicked=0;
                     span.textContent = counter;
+                    document.getElementById('alert').style.display='none';
+                    document.getElementById('disp-div').style.opacity="1";
                     if (counter <= size + 1) {
                         // labels
                         header.textContent = data[`question${counter}`]['Q'];
@@ -108,42 +110,6 @@ fetch('./qcm.json')
                                             } else {
                                                 result.classList.add('border-danger');
                                             }
-                                            //
-                                            let show = document.getElementById('show');
-                                            show.addEventListener('click', e => {
-                                                if (e.target) {
-                                                    document.body.style.overflow="scroll";
-                                                }
-                                                let div = document.createElement('div');
-                                                div.setAttribute('class', 'card');
-                                                div.classList.add('m-5');
-                                                div.classList.add('card-ctx');
-                                                div.classList.add('p-3');
-                                                let h3 = document.createElement("h3");
-                                                h3.textContent = `Q1: ${initQuiz[`question1`]['Q']}`;
-                                                let p = document.createElement("p");
-                                                p.className='p-5';
-                                                p.textContent = `${initQuiz[`question1`]['discription']}`;
-                                                div.appendChild(h3);
-                                                div.appendChild(p);
-                                                document.body.appendChild(div)
-                                                for (let i = 2; i <= size + 1; i++) {
-                                                    let div = document.createElement('div');
-                                                    div.setAttribute('class', 'card');
-                                                    div.classList.add('m-5');
-                                                    div.classList.add('shadow-lg');
-                                                    div.classList.add('card-ctx');
-                                                    div.classList.add('p-3');
-                                                    let h3 = document.createElement("h3");
-                                                    h3.textContent = `Q${i} : ${data[`question${i}`]['Q']}`;
-                                                    let p = document.createElement("p");
-                                                    p.className='p-5';
-                                                    p.textContent = `${data[`question${i}`]['discription']}`;
-                                                    div.appendChild(h3);
-                                                    div.appendChild(p);
-                                                    document.body.appendChild(div);
-                                                }
-                                            });
                                         }
                                     }
                                 }
@@ -164,6 +130,17 @@ fetch('./qcm.json')
                             if (ele.checked && validClicked!=1) {
                                 score += parseInt(ele.value);
                                 validClicked=1;
+                                let alert=document.getElementById('alert');
+                                alert.style.display='block';
+                                document.getElementById('disp-div').style.opacity="0.5";
+                                if (parseInt(ele.value)===1) {
+                                    alert.classList.add('alert-success');
+                                    alert.classList.remove('alert-danger');
+                                }
+                                else if(parseInt(ele.value)===0) {
+                                    alert.classList.remove('alert-success');
+                                    alert.classList.add('alert-danger');
+                                }
                             }
                         }
                     }

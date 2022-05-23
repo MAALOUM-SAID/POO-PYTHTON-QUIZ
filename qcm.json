@@ -190,15 +190,5 @@
             "a4":["une super classe",0]
         },
         "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
-    },
-    "question21" :{
-        "Q":"Quel module permet d'utiliser les expressions régulières ?",
-        "answers":{
-            "a1":["re",1],
-            "a2":["regex",0],
-            "a3":["regular expressions",0],
-            "a4":["regexp",0]
-        },
-        "discription":"en python pour instancier un objet a partir d'une classe obj=NomClasse()"
     }
 }

@@ -1,5 +1,5 @@
 body{
-    background-image: url('index.jpg');
+    background:url("index.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -25,4 +25,12 @@ h2 span{
 }
 nav{
     background-color: #ece6e6;
+}
+.alert{
+    position: absolute;
+    width: 80%;
+    top: 40%;
+    margin-left:10%;
+    z-index: 99;
+    display: none;
 }
