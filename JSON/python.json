@@ -5,15 +5,15 @@
         "answers":{
             "a1":["Error",0],
             "a2":["max speed 100km/h",1],
-            "a3":["la method max_speed n'exist pas dans la classe BmvS1 ",0],
+            "a3":["la method max_speed n'exist pas dans la classe BmvS1",0],
             "a4":["la classe BmvS1 est Vide",0]
         },
-        "discription":"Un constructeur permet d'initialiser les données des objets (les attributs) de la classe dont elle dépend Le constructeur ne doit pas avoir un type de retour.",
-        "answer":"rien"
+        "discription":"Supposons que la classe BmvS1 définit ou redéfinit la méthode max_speed(). Si un objet de la classe BmvS1 fait appel à la méthode max_speed(), c’est celle de la classe BmvS1 qui sera exécutée, en cas d’échec la recherche se poursuit au niveau de la classe Bmv puis Car et ainsi de suite.",
+        "answer":"max speed 100km/h"
     
     },
     "question3" :{
-        "Q":"Achnahowa l Aoutput Dyal had lCode ?",
+        "Q":"Achnahowa l Aoutput Dyal had lCode?",
         "img":"images/Q2.png",
         "answers":{
             "a1":["Error",1],
@@ -21,12 +21,12 @@
             "a3":["rien",0],
             "a4":["une addresse",0]
         },
-        "discription":"Un constructeur permet d'initialiser les données des objets (les attributs) de la classe dont elle dépend Le constructeur ne doit pas avoir un type de retour.",
-        "answer":"rien"
+        "discription":" Si une sous-classe d'une classe abstraite n'implémente pas toutes les méthodes abstraites dont elle hérite, cette sous-classe est elle-même abstraite (et ne peut donc pas être instanciée)",
+        "answer":"Error"
     
     },
     "question4" :{
-        "Q":"Achnahowa l Aoutput Dyal had lCode ?",
+        "Q":"Achnahowa l Aoutput Dyal had lCode?",
         "img":"images/Q3.png",
         "answers":{
             "a1":["Error",0],
@@ -34,8 +34,122 @@
             "a3":["Total Bus fare is: 5500",1],
             "a4":["la method fare n'exist pas dans la classe Vehicle",0]
         },
-        "discription":"Un constructeur permet d'initialiser les données des objets (les attributs) de la classe dont elle dépend Le constructeur ne doit pas avoir un type de retour.",
-        "answer":"rien"
+        "discription":"Supposons que la classe BmvS1 définit ou redéfinit la méthode max_speed(). Si un objet de la classe BmvS1 fait appel à la méthode max_speed(), c’est celle de la classe BmvS1 qui sera exécutée, en cas d’échec la recherche se poursuit au niveau de la classe Bmv puis Car et ainsi de suite.",
+        "answer":"Total Bus fare is: 5500"
     
+    },
+    "question5" :{
+        "Q":"Achnahowa l Aoutput Dyal had lCode ?",
+        "img":"images/Q4.png",
+        "answers":{
+            "a1":["name:School Volvo,mileage:12,capacity:50,address:Agadir rue Alfalah N45",0],
+            "a2":["rien",0],
+            "a3":["address:Agadir rue Alfalah N45",0],
+            "a4":["Error",1]
+        },
+        "discription":"Les variables Prevée sont les membres de données d'une classe auxquels il est ne possible pas d'accéder dans la classe et les classes dérivées de cette classe.",
+        "answer":"Error"
+    
+    },
+    "question6" :{
+        "Q":"Achnahowa l Aoutput Dyal had lCode ?",
+        "img":"images/Q5.png",
+        "answers":{
+            "a1":["Syntax Error",0],
+            "a2":["name:School Volvo,mileage:12,capacity:50,address:Agadir rue Alfalah N45",1],
+            "a3":["rien",0],
+            "a4":["address:Agadir rue Alfalah N45",0]
+        },
+        "discription":"Les variables protégées sont les membres de données d'une classe auxquels il est possible d'accéder dans la classe et les classes dérivées de cette classe.",
+        "answer":"name:School Volvo,mileage:12,capacity:50,address:Agadir rue Alfalah N45"
+    
+    },
+    "question7" :{
+        "Q":"Achnahowa l Aoutput Dyal had lCode ?",
+        "img":"images/Q6.png",
+        "answers":{
+            "a1":["School Volvo",1],
+            "a2":["School Volvo,mileage:12,capacity:50,address:Agadir rue Alfalah N45",0],
+            "a3":["Error",0],
+            "a4":["l'attribut name n'exsist pas dans la classe Bus",0]
+        },
+        "discription":"Les variables privées, sont des variables visibles uniquement par la classe à laquelle elles appartiennent. Les variables protégées sont des variables visibles uniquement par la classe à laquelle elles appartiennent et par toutes les sous-classes.",
+        "answer":"School Volvo"
+    
+    },
+    "question8" :{
+        "Q":"Achnahowa l Aoutput Dyal had lCode ?",
+        "img":"images/Q7.png",
+        "answers":{
+            "a1":["Petrol\nMax speed 350\nPetrol",0],
+            "a2":["Error la method fuel_type() n'exist pas dans la class BMW",0],
+            "a3":["Petrol\nMax speed 350\nPetrol\nMax speed is 240",1],
+            "a4":["Petrol\nMax speed 350\nMax speed is 240",0]
+        },
+        "discription":"Si une sous-classe d'une classe abstraite n'implémente pas toutes les méthodes abstraites dont elle hérite, cette sous-classe est elle-même abstraite (et ne peut donc pas être instanciée)",
+        "answer":"Petrol\nMax speed 350\nPetrol\nMax speed is 240"
+    
+    },
+    "question9" :{
+        "Q":"Achnahowa l Aoutput Dyal had lCode ?",
+        "img":"images/Q8.png",
+        "answers":{
+            "a1":["Error",0],
+            "a2":["Name: YOUSSEF Age: 15",1],
+            "a3":["Name: SAID Age: 20",0],
+            "a4":["les attribut d'instance sont imutable",0]
+        },
+        "discription":"Les variables privées, sont des variables visibles uniquement par la classe à laquelle elles appartiennent. Les variables protégées sont des variables visibles uniquement par la classe à laquelle elles appartiennent et par toutes les sous-classes.",
+        "answer":"Name: YOUSSEF Age: 15"
+    
+    },
+    "question10" :{
+        "Q":"Achnahowa l Aoutput Dyal had lCode ?",
+        "img":"images/Q9.png",
+        "answers":{
+            "a1":["True True",0],
+            "a2":["False False",0],
+            "a3":["False True",0],
+            "a4":["True False",1]
+        },
+        "discription":"Les méthodes Dunder ou magic en Python sont les méthodes ayant deux traits de soulignement préfixe et suffixe dans le nom de la méthode. Dunder signifie ici «Double Under (Underscores)». Ceux-ci sont couramment utilisés pour la surcharge des opérateurs.",
+        "answer":"True False"
+    
+    },
+    "question11" :{
+        "Q":"Achnahowa l Aoutput Dyal had lCode ?",
+        "img":"images/Q10.png",
+        "answers":{
+            "a1":["0",0],
+            "a2":["3",1],
+            "a3":["Error",0],
+            "a4":["4",0]
+        },
+        "discription":"Un constructeur permet d'initialiser les données des objets (les attributs) de la classe dont elle dépend Le constructeur ne doit pas avoir un type de retour.",
+        "answer":" 3"
+    },
+    "question12" :{
+        "Q":"Achnahowa l Aoutput Dyal had lCode ?",
+        "img":"images/Q11.png",
+        "answers":{
+            "a1":["4",1],
+            "a2":["3",0],
+            "a3":["Error",0],
+            "a4":["0",0]
+        },
+        "discription":"Python permet la définition de variables statiques tout court si, hors d'une classe, définie au niveau du module; et dans un objet, si défini hors des fonctions de la classe. On s'intéresse à cette possibilité. Dans un tel cas, elle est accédée par le nom de la classe.",
+        "answer":" 4"
+    },
+    "question13" :{
+        "Q":"Achnahowa l Aoutput Dyal had lCode ?",
+        "img":"images/Q12.png",
+        "answers":{
+            "a1":["4",1],
+            "a2":["3",0],
+            "a3":["Error",0],
+            "a4":["0",0]
+        },
+        "discription":"Les méthodes de classes sont différentes des méthodes d'instances en ce qu'elles prennent comme premier argument la classe elle-même. De plus, une méthode de classe est liée à la classe, mais pas à l'objet de cette classe.",
+        "answer":" 4"
     }
 }
