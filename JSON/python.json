@@ -1,6 +1,7 @@
 {
     "question2" :{
-        "Q":"images/Q1.png",
+        "Q":"Achnahowa l Aoutput Dyal had lCode ?",
+        "img":"images/Q1.png",
         "answers":{
             "a1":["Error",0],
             "a2":["max speed 100km/h",1],
@@ -12,7 +13,8 @@
     
     },
     "question3" :{
-        "Q":"images/Q2.png",
+        "Q":"Achnahowa l Aoutput Dyal had lCode ?",
+        "img":"images/Q2.png",
         "answers":{
             "a1":["Error",1],
             "a2":["circle",0],
@@ -24,7 +26,8 @@
     
     },
     "question4" :{
-        "Q":"images/Q3.png",
+        "Q":"Achnahowa l Aoutput Dyal had lCode ?",
+        "img":"images/Q3.png",
         "answers":{
             "a1":["Error",0],
             "a2":["rien",0],

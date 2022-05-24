@@ -23,6 +23,7 @@ fetch('./JSON/python.json')
             let valider = document.getElementById('valider');
             let nextone = document.getElementById('nextone');
             // header
+            let header0= document.getElementById('card-header');
             let header = document.getElementById('card-header-image');
             // Object Size
             let size = Object.keys(data).length;
@@ -34,6 +35,7 @@ fetch('./JSON/python.json')
             let initQuiz = {
                 question1: {
                     "Q": "Quelles méthodes et variables peuvent être utilisées dans une classe héritée ?",
+                    "img": "Quelle",
                     "answers": {
                         "a1": ["private ou protected", 0],
                         "a2": ["public ou protected", 1],
@@ -46,6 +48,7 @@ fetch('./JSON/python.json')
             }
 
             // labels
+            header0.textContent=initQuiz[`question${counter}`][`Q`];
             header.src=initQuiz[`question${counter}`][`Q`];
             label1.textContent = initQuiz[`question${counter}`]["answers"]["a1"][0];
             label2.textContent = initQuiz[`question${counter}`]["answers"]["a2"][0];
@@ -69,7 +72,8 @@ fetch('./JSON/python.json')
                     document.getElementById('disp-div').style.opacity="1";
                     if (counter <= size + 1) {
                         // labels
-                        header.src = data[`question${counter}`]['Q'];
+                        header0.textContent = data[`question${counter}`]['Q'];
+                        header.src = data[`question${counter}`]['img'];
                         label1.textContent = data[`question${counter}`]["answers"]["a1"][0];
                         label2.textContent = data[`question${counter}`]["answers"]["a2"][0];
                         label3.textContent = data[`question${counter}`]["answers"]["a3"][0];
