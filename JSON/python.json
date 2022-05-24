@@ -1,0 +1,26 @@
+{
+    "question2" :{
+        "Q":"images/Q1.png",
+        "answers":{
+            "a1":["Error",0],
+            "a2":["max speed 100km/h",1],
+            "a3":["la method max_speed n'exist pas dans la classe BmvS1 ",0],
+            "a4":["la classe BmvS1 est Vide",0]
+        },
+        "discription":"Un constructeur permet d'initialiser les données des objets (les attributs) de la classe dont elle dépend Le constructeur ne doit pas avoir un type de retour.",
+        "answer":"rien"
+    
+    },
+    "question3" :{
+        "Q":"images/Q2.png",
+        "answers":{
+            "a1":["Error",1],
+            "a2":["circle",0],
+            "a3":["rien",0],
+            "a4":["une addresse",0]
+        },
+        "discription":"Un constructeur permet d'initialiser les données des objets (les attributs) de la classe dont elle dépend Le constructeur ne doit pas avoir un type de retour.",
+        "answer":"rien"
+    
+    }
+}
