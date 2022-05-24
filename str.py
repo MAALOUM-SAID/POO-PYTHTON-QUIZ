@@ -1,14 +1,15 @@
-from abc import  ABC,abstractmethod
-class Forme(ABC):
-    def __init__(self,nom) -> None:
-        self.nom=nom
-    @abstractmethod
-    def surface(self):
-        pass
-class Circle(Forme):
-    def __str__(self) -> str:
-        return super().__str__()
+class Vehicle:
+    def __init__(self, name, mileage, capacity):
+        self.name = name
+        self.mileage = mileage
+        self.capacity = capacity
 
-circle=Circle("circle")
-print(circle)
+    def fare(self):
+        return self.capacity * 100
+
+class Bus(Vehicle):
+    pass
+
+School_bus = Bus("School Volvo", 12, 50)
+print("Total Bus fare is:", School_bus.fare())
 

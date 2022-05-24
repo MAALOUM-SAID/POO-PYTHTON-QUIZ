@@ -22,5 +22,17 @@
         "discription":"Un constructeur permet d'initialiser les données des objets (les attributs) de la classe dont elle dépend Le constructeur ne doit pas avoir un type de retour.",
         "answer":"rien"
     
+    },
+    "question4" :{
+        "Q":"images/Q3.png",
+        "answers":{
+            "a1":["Error",0],
+            "a2":["rien",0],
+            "a3":["Total Bus fare is: 5500",1],
+            "a4":["la method fare n'exist pas dans la classe Vehicle",0]
+        },
+        "discription":"Un constructeur permet d'initialiser les données des objets (les attributs) de la classe dont elle dépend Le constructeur ne doit pas avoir un type de retour.",
+        "answer":"rien"
+    
     }
 }
