@@ -1,4 +1,4 @@
-fetch('./qcm.json')
+fetch('./JSON/qcm.json')
         .then(resp => {
             return resp.json();
         })
