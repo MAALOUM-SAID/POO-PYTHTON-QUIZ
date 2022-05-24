@@ -34,22 +34,20 @@ fetch('./JSON/python.json')
             // initial quiz
             let initQuiz = {
                 question1: {
-                    "Q": "Quelles méthodes et variables peuvent être utilisées dans une classe héritée ?",
-                    "img": "Quelle",
+                    "Q": "Quelle méthode permet de supprimer un objet ? ?",
                     "answers": {
-                        "a1": ["private ou protected", 0],
-                        "a2": ["public ou protected", 1],
-                        "a3": ["toutes", 0],
-                        "a4": ["private ou public", 0]
+                        "a1": ["finalize()", 0],
+                        "a2": ["__del__()", 1],
+                        "a3": ["~ObjetADetruire()", 0],
+                        "a4": ["delete()", 0]
                     },
-                    'discription': "public ou protected",
-                    "answer":"public ou protected"
+                    'discription': "La méthode __del __ () est une méthode appelée destructeur en Python. Il est appelé lorsque toutes les références à l'objet ont été supprimées, c'est-à-dire lorsqu'un objet est nettoyé. Voici un exemple simple de destructeur. En utilisant le mot-clé del, nous avons supprimé toutes les références de l'objet «tab».",
+                    "answer":"__del__()"
                 },
             }
 
             // labels
             header0.textContent=initQuiz[`question${counter}`][`Q`];
-            header.src=initQuiz[`question${counter}`][`Q`];
             label1.textContent = initQuiz[`question${counter}`]["answers"]["a1"][0];
             label2.textContent = initQuiz[`question${counter}`]["answers"]["a2"][0];
             label3.textContent = initQuiz[`question${counter}`]["answers"]["a3"][0];
